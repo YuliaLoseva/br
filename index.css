@@ -1,0 +1,95 @@
+body {
+  background-color: #f8f8f8;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.brands {
+  /* position: relative; */
+}
+.brands__title {
+  background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+  font-family: "TT Lakes";
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+
+  color: #7e7e82;
+}
+.brands__box {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  grid-column-gap: 30px; */
+}
+.brands__box-hide {
+  height: 180px !important;
+  /* overflow: hidden; */
+}
+.brands__card {
+  justify-content: space-around;
+  display: flex;
+  margin-right: 24px;
+  margin-top: 16px;
+  width: 224px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+}
+.brands__under {
+  width: 40px;
+  height: 40px;
+  margin: 16px;
+}
+
+button {
+  border: 0;
+  background-color: #f8f8f8;
+  margin-top: 24px;
+  margin-left: 25px;
+}
+.brands__show {
+  position: relative;
+}
+.brands__show::before {
+  content: "";
+  position: absolute;
+  background: url(./pics/arrowDown.svg) no-repeat center/10px;
+  height: 15px;
+  width: 10px;
+  left: -10px;
+}
+.btn-rotate::before {
+  content: "";
+  transform: rotate(180deg);
+  position: absolute;
+}
+.swiper-slide {
+  display: flex !important;
+  height: 72px !important;
+}
+.mySwiper {
+  overflow: hidden;
+}
+.btn-hide {
+  display: none;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
